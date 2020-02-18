@@ -1,0 +1,20 @@
+<style>
+	ul{
+		list-style: none;
+		float: left;
+	}
+	img{
+		height: 150px;
+	}
+</style>
+<h1> Results Page </h1>
+
+	<% data.Search.forEach(function(movie){ %>
+	<ul>
+		<li> Title : <strong><%= movie.Title %></strong> </li> 
+		<li> Year : <%= movie.Year %> </li>
+		<li> <img src = "<%= movie.Poster %>"> </img> </li>
+	</ul>
+	<% }) %>
+
+<a href = "/"> Search Again</a>
